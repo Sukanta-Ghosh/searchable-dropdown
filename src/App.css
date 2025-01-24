@@ -1,0 +1,20 @@
+body {
+  display: flex;
+}
+
+.dropdown{
+  margin-bottom: 100px;
+}
+
+.show-content{
+  
+  justify-content: flex-start;
+}
+
+.config{
+  padding: 10px;
+}
+
+.option-section{
+  border: 2px solid black;
+}
