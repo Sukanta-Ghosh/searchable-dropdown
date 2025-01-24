@@ -50,9 +50,14 @@ const MainComponent = () => {
       setData([textContent]);
     } else if (configValue === "multiple") {
       if (data.includes(textContent)) {
-        return;
+        setData((data) =>
+          data.filter(
+            (item) => item.toLowerCase() !== textContent.toLowerCase()
+          )
+        );
+      } else {
+        setData((data) => [...data, textContent]);
       }
-      setData((data) => [...data, textContent]);
     }
   };
 
